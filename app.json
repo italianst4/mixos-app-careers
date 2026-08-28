@@ -1,0 +1,30 @@
+{
+  "name": "Career",
+  "description": "An ATS-safe resume and cover letter for each posting, grounded in a career library you author, tracked through to an outcome.",
+  "icon": "briefcase",
+  "authors": [
+    {
+      "name": "Anthony Montalbano",
+      "email": "amontalbano@gmail.com"
+    }
+  ],
+  "connectors": [],
+  "database": true,
+  "notifications": false,
+  "widgets": [
+    {
+      "name": "Application Pipeline",
+      "description": "Open applications by status, and anything quiet long enough to be worth a follow-up.",
+      "component": "widgets/application-pipeline.tsx",
+      "defaultSize": {
+        "w": 4,
+        "h": 3
+      },
+      "minSize": {
+        "w": 3,
+        "h": 2
+      }
+    }
+  ],
+  "lastUpdated": "2026-08-28T05:31:59.355Z"
+}
