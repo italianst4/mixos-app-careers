@@ -1,6 +1,7 @@
 {
   "name": "Career",
   "description": "An ATS-safe resume and cover letter for each posting, grounded in a career library you author, tracked through to an outcome.",
+  "tagline": "Tailored resumes and cover letters, tracked to an outcome",
   "icon": "briefcase",
   "authors": [
     {
@@ -8,6 +9,14 @@
       "email": "amontalbano@gmail.com"
     }
   ],
+  "keywords": [
+    "career",
+    "job search",
+    "resume",
+    "cover letter",
+    "ats"
+  ],
+  "license": "MPL-2.0",
   "connectors": [],
   "database": true,
   "notifications": false,
@@ -26,5 +35,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-08-28T05:31:59.355Z"
+  "lastUpdated": "2026-09-11T03:28:22.270Z"
 }
