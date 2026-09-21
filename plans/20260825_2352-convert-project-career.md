@@ -83,13 +83,13 @@ and education.
 ### Model access: an `anthropic` connector (locked with the user)
 
 The pipeline calls the Anthropic API with an API key. Per `apps/AGENTS.md` #12 and
-the `/mix-convert` mapping table, a credentialed outbound integration is a
+the `/mixos convert` mapping table, a credentialed outbound integration is a
 **connector**, not `context.http` + `env`. `ls connectors/` shows only `_template`
 and `_template-oauth` — **no `anthropic` connector exists.**
 
 It is a **blocking dependency for phase 3** and is deliberately **not built here**: a
 connector is shared, tenant-scoped and security-sensitive, and deserves its own plan
-and review. Run `/mix-connector create anthropic` before phase 3.
+and review. Run `/mixos connector create anthropic` before phase 3.
 
 The alternative (`env: ANTHROPIC_API_KEY` + `egress: api.anthropic.com` +
 `context.http`) is legal and was considered. Rejected because it re-hand-rolls the
@@ -145,7 +145,7 @@ see what has gone quiet.
 
 ### Data: schema only
 
-**Moving your existing library is out of scope for this command**, per `/mix-convert`
+**Moving your existing library is out of scope for this command**, per `/mixos convert`
 §1.7. Your 39 accomplishments, 9 roles, 6 skill groups, 5 philosophies and profile
 live in TypeScript files in the source repo. They are *your personal data* — your
 email, your phone, and 39 private `evidence` notes — and they do not belong in a
@@ -434,7 +434,7 @@ it for "interview" would tell the user an interview is an error.
    schema), a cacheable system-block prefix with `cache_control: ephemeral`, an
    `effort` parameter, and `stop_reason: "refusal"` surfaced rather than swallowed
    (it arrives as a 200 with empty content — `lib/ai/client.ts:86`). Credential: one
-   API key. Run `/mix-connector create anthropic`.
+   API key. Run `/mixos connector create anthropic`.
 
 2. **`@react-pdf/renderer` in the root `package.json` — blocking for phase 2.**
    Approved above. One dependency, added to every MixOS build.
