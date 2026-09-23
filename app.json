@@ -16,6 +16,13 @@
     "cover letter",
     "ats"
   ],
+  "screenshots": [
+    {
+      "file": "screenshots/applications.png",
+      "alt": "The Applications page: a status filter, a banner warning that five library entries would print blank, and an empty tracker.",
+      "caption": "Applications, before anything is tracked"
+    }
+  ],
   "license": "MPL-2.0",
   "connectors": [],
   "database": true,
@@ -35,5 +42,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-09-21T02:55:21.121Z"
+  "lastUpdated": "2026-09-23T04:10:34.453Z"
 }
