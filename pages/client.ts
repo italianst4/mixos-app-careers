@@ -3,12 +3,12 @@ import { AppClientError, createAppClient } from "@/lib/apps/sdk";
 /**
  * The typed client, named once.
  *
- * The `<"career">` type argument is what buys the checking: `call()` only
+ * The `<"careers">` type argument is what buys the checking: `call()` only
  * accepts route specs this app declares, the input is checked against that
  * route's own Zod schema, and the result comes back typed from its `output`.
  * Without it every call falls back to `unknown`.
  */
-export const client = createAppClient<"career">("career");
+export const client = createAppClient<"careers">("careers");
 
 /**
  * The one error string this app may put on screen.

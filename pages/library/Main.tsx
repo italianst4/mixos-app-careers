@@ -19,7 +19,7 @@ export default async function LibraryPage() {
   let library: Library | null = null;
 
   try {
-    library = await callAppRoute<Library>("career", "GET /library");
+    library = await callAppRoute<Library>("careers", "GET /library");
   } catch {
     library = null;
   }
@@ -32,7 +32,7 @@ export default async function LibraryPage() {
           message="Your career library could not be loaded."
         />
         <p className="mt-4 text-sm text-muted-foreground">
-          <Link href="/apps/career/library" className="underline underline-offset-2">
+          <Link href="/apps/careers/library" className="underline underline-offset-2">
             Try again
           </Link>
         </p>
@@ -45,7 +45,7 @@ export default async function LibraryPage() {
       <AppPageHeader
         title="Career library"
         subtitle="The only source of fact any generated document may draw on. Nothing is invented from anywhere else."
-        actions={[{ label: "Applications", href: "/apps/career", variant: "secondary" }]}
+        actions={[{ label: "Applications", href: "/apps/careers", variant: "secondary" }]}
       />
       <LibraryEditor initial={library} />
     </div>

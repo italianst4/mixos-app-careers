@@ -45,6 +45,10 @@ and it becomes the first real app on this platform.
 - **Slug `career`** (folder `apps/career`, served at `/apps/career`). Matches the
   source's own `lib/career/` naming and covers both halves of the app — the durable
   library and the per-posting tracker.
+  *Superseded 2026-10-05:* the folder was renamed to `apps/careers`, so the slug,
+  the URL (`/apps/careers`) and the table prefix (`_app_careers_`) all follow it.
+  The pages hard-code the slug for `callAppRoute`, `createAppClient` and their
+  links; those still said `career`, which made every page fail with "No app".
 - **Name "Career"**, icon `briefcase` (Lucide).
 
 ### One app, not several
