@@ -1,0 +1,10 @@
+[
+  {
+    "date": "2026-10-20",
+    "note": "The Applications and Career library pages open again, at the app's new address, /apps/careers. Since the app was renamed, both had shown an error."
+  },
+  {
+    "date": "2026-08-28",
+    "note": "First release: a private career library you fill in once, and a tracker for the jobs you apply to: each one's status, its posted pay against your target, and a flag once it goes quiet for two weeks. Plus an Application Pipeline widget."
+  }
+]
