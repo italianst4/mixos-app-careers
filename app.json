@@ -1,4 +1,5 @@
 {
+  "$schema": "https://mixos.org/schemas/app/v1.json",
   "name": "Career",
   "description": "An ATS-safe resume and cover letter for each posting, grounded in a career library you author, tracked through to an outcome.",
   "tagline": "Tailored resumes and cover letters, tracked to an outcome",
