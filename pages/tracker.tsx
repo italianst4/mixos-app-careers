@@ -69,7 +69,7 @@ export function Tracker({
       if (next) query.set("status", next);
       else query.delete("status");
       const qs = query.toString();
-      router.replace(qs ? `/apps/careers?${qs}` : "/apps/careers");
+      router.replace(qs ? `/apps/careers-baa28a1b?${qs}` : "/apps/careers-baa28a1b");
     },
     [params, router],
   );
@@ -240,7 +240,7 @@ export function Tracker({
             <p className="text-sm text-muted-foreground">
               A document assembled now would have a gap where these belong.{" "}
               <Link
-                href="/apps/careers/library"
+                href="/apps/careers-baa28a1b/library"
                 className="text-foreground underline underline-offset-2"
               >
                 Fix them in the library

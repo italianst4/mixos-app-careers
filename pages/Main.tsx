@@ -28,7 +28,7 @@ export default async function CareerPage() {
   let failure: string | null = null;
 
   try {
-    result = await callAppRoute<Result>("careers", "GET /applications");
+    result = await callAppRoute<Result>("careers-baa28a1b", "GET /applications");
   } catch {
     // Degrade rather than fail. `callAppRoute` throws `AppError`, and its
     // message is written for a caller — but a server component has no retry
@@ -44,7 +44,7 @@ export default async function CareerPage() {
           message={failure ?? "The tracker could not be loaded."}
         />
         <p className="mt-4 text-sm text-muted-foreground">
-          <Link href="/apps/careers" className="underline underline-offset-2">
+          <Link href="/apps/careers-baa28a1b" className="underline underline-offset-2">
             Try again
           </Link>
         </p>
@@ -64,7 +64,7 @@ export default async function CareerPage() {
             ? "Nothing tracked yet."
             : `${open} open${closed > 0 ? ` · ${closed} closed` : ""}`
         }
-        actions={[{ label: "Library", href: "/apps/careers/library", variant: "secondary" }]}
+        actions={[{ label: "Library", href: "/apps/careers-baa28a1b/library", variant: "secondary" }]}
       />
 
       <Tracker

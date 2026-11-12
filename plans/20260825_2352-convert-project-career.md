@@ -49,6 +49,10 @@ and it becomes the first real app on this platform.
   the URL (`/apps/careers`) and the table prefix (`_app_careers_`) all follow it.
   The pages hard-code the slug for `callAppRoute`, `createAppClient` and their
   links; those still said `career`, which made every page fail with "No app".
+  *Superseded 2026-11-12:* listed on mixos.org as `careers-baa28a1b`, the slug
+  an install gets, so the folder was renamed to `apps/careers-baa28a1b` with
+  `npm run rename` (which records it in `extension-renames.json` so each
+  instance's data follows) and the pages' slug and links follow it.
 - **Name "Career"**, icon `briefcase` (Lucide).
 
 ### One app, not several
